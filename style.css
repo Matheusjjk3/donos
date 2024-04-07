@@ -6,44 +6,48 @@
 
 :root {
   font-size: 62.5%;
-  font-family: "Oswald", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
   font-size: 1.6rem;
   color: rgb(255, 255, 255);
-  background: rgb(240, 240, 240);
+  background: rgb(107, 107, 107);
 }
 
 .page {
   margin: 0 35rem;
+  background: #585858;
+
+  -webkit-box-shadow: 0px 1px 18px 3px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 1px 18px 3px rgba(51, 51, 51, 1);
+  box-shadow: 0px 1px 18px 3px rgba(51, 51, 51, 1);
 }
 
 nav {
-  font-size: 1.6rem;
   height: 7rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
-  padding: 4rem;
-  border-bottom: 1px solid wheat;
+  padding: 5rem 10rem;
+  background: #252525;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
 
-  transition: 0.1s;
+  transition: 0.3s;
 }
 
 h1:hover {
-  font-size: 3.2rem;
+  font-size: 5rem;
   color: #fff000;
 }
 
 #logo {
-  max-width: 5rem;
+  max-width: 7rem;
   border: 2px solid white;
   border-radius: 1rem;
 
@@ -51,7 +55,7 @@ h1:hover {
 }
 
 #logo:hover {
-  max-width: 6rem;
+  max-width: 8rem;
   border: solid #fff000 0.2rem;
 }
 
@@ -64,6 +68,12 @@ h1:hover {
 .to-browse {
   display: flex;
   gap: 7rem;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  background: #202020;
+
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 a {
@@ -78,9 +88,87 @@ a:hover {
   color: #fff000;
 }
 
-main {
+.matchs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 5rem;
+
+  gap: 1rem;
+}
+
+.jogo {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
   margin-top: 1rem;
-  padding: 4rem;
+  border: solid white 2px;
+  border-radius: 1rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.jogo:hover {
+  border: solid #fff000 2px;
+  background: rgb(25, 25, 25);
+
+  fill: #fff000;
+}
+
+.separationOne {
+  border: 1px solid white;
+  width: max-content;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.separationOne:hover {
+  border: solid #fff000 1px;
+}
+
+.time {
+  align-items: center;
+  width: 15rem;
+  padding: 0.1rem;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.time:hover {
+  color: #fff000;
+}
+
+.time p {
+  font-size: 1.4rem;
+}
+
+.separationTwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 5.5rem;
+
+  gap: 1rem;
+}
+
+.teamOne img {
+  max-width: 5.5rem;
+}
+
+#x {
+  max-width: 3.5rem;
+}
+
+.teamTwo img {
+  max-width: 5.5rem;
+}
+
+main {
+  padding: 1rem 5rem;
   height: max-content;
   border-radius: 0.5rem;
 
@@ -105,7 +193,7 @@ main img {
 
 .news1 {
   border: 1px #ffffff solid;
-  background: rgb(93, 67, 136);
+  background: rgb(25, 25, 25);
   padding: 0;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
@@ -116,13 +204,8 @@ main img {
 
 .news1:hover {
   border: 1px #fff000 solid;
-  background: rgb(189, 154, 241);
-  background: rgb(128, 85, 191);
-  background: linear-gradient(
-    82deg,
-    rgba(128, 85, 191, 1) 0%,
-    rgba(62, 39, 103, 1) 100%
-  );
+  background: #0c0c0c;
+  color: #fff000;
 }
 
 .news2 {
@@ -134,7 +217,7 @@ main img {
 
 .grid {
   border: 1px #ffffff solid;
-  background: rgb(93, 67, 136);
+  background: rgb(25, 25, 25);
   border-radius: 0.5rem;
   transition: 0.05s;
 
@@ -142,20 +225,7 @@ main img {
 }
 
 .grid:hover {
-  background: rgb(189, 154, 241);
-  background: rgb(128, 85, 191);
-  background: linear-gradient(
-    82deg,
-    rgba(128, 85, 191, 1) 0%,
-    rgba(62, 39, 103, 1) 100%
-  );
-}
-
-aside {
-  background: rgb(154, 132, 185);
-  background: linear-gradient(
-    54deg,
-    rgb(109, 5, 255) 0%,
-    rgba(24, 19, 33, 1) 100%
-  );
+  border: 1px #fff000 solid;
+  background: #0c0c0c;
+  color: #fff000;
 }
